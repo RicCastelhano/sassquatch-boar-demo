@@ -1,0 +1,103 @@
+body{
+	margin: 0px; 
+	padding: 0px; 
+	color: $generic_font_color;
+	line-height: $generic_line_height;
+	font-family: $generic_font_family;
+	font-size: $generic_font_size;
+	background: $body_background_color url($body_background_img) repeat-x 0px 0px;
+}
+
+main{
+	max-width: $page_max_width;
+	margin: 0px auto;
+	position: relative;
+	background-color: $page_background_color;
+}
+
+h1{
+	color: $h1_color;
+	margin: 0em 0em .5em 0em;
+	font-size: $generic_line_height + 0.5em;  //<-- OPERATIONS
+	font-weight: normal;
+}
+h2{ 
+	font-size: $generic_line_height + 0.2em; 
+	margin: 0em 0em 1em 0em; 
+}
+h3{ 
+	font-size: $generic_line_height;
+	margin: 0em 0em 1em 0em; 
+}
+p{ 
+	margin: 0px 0px .75em 0px; 
+}
+
+//NESTING
+a { 
+	color: #de9000; 
+	&:hover{
+		color: #009eff;	
+	}
+	&.cta{
+		text-transform: uppercase;
+		font-size: .9em;
+		font-weight: bold;
+		text-decoration: none;
+		margin: .5em 0 0 0;
+		padding: 0px 12px 0px 0px;
+		background: url(../images/cta_arrow.png) no-repeat right 0px;	
+		&:hover{
+			background-position: right -50px;			
+		}
+	}
+}
+
+
+footer{
+  font-size: $footer_font_size; 
+  color: $footer_font_color; 
+  background-color: $footer_background_color; 
+  padding: 10px 10px 10px 0px;
+}
+
+.promo{
+	background-repeat: no-repeat;
+	&.one{
+		background-image: url("../images/promo_1.jpg");
+	}
+	&.two{
+		background-image: url(../images/promo_2.jpg); 
+	}
+	&.three{
+		background-image: url(../images/promo_3.jpg); 
+	}
+	h3{
+		font-size: 1.1em;
+		margin: 0;
+	}
+	p{
+		line-height: 1.2em;
+		font-size: .9em;
+		margin-bottom: .5em;
+	}
+}
+
+nav{
+	a{
+		color: $nav_link_color;
+		text-transform: uppercase;
+		text-decoration: none;
+		display: inline-block;
+		font-weight: bold;
+		font-size: $nav_link_size;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
+.clear-fix{
+	clear: both;
+	line-height: 1px;
+}

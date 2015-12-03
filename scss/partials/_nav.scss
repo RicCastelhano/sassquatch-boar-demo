@@ -1,0 +1,36 @@
+nav{
+	@include bp-small {
+		display: block;
+		position: static;
+		padding: 10px 0px 10px 0px;
+		background-color: #515673;
+		a{
+			color: #a6abc5;
+			display: block;
+			margin: 15px;
+			padding: 9px;
+			background: url(../images/mobile_link_arrow.png) no-repeat right center;
+			@include borders(1px, solid, #a6abc5, 12px);
+			&:hover{
+				color: #fff; 
+				background-color: rgba(255,255,255,.15);
+			}
+		}
+	}
+	@include bp-medium {
+		top: 200px;
+		a{
+			margin-right: 20px;
+		}
+	}
+	@include bp-large {
+		top: 275px;
+		width: 100%;
+		display: block;
+		position: absolute;
+		background-color: #a6430a;
+		a{
+			margin: 12px 0px 10px 20px;
+		}	
+	}
+}

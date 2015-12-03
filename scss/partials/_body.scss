@@ -1,0 +1,9 @@
+
+body{
+	@include bp-small{
+		background: $body_background_color;
+	}
+	@include bp-medium{
+		background: $body_background_color;
+	}
+}

@@ -1,0 +1,42 @@
+header{
+	@include bp-small {
+		height: 75px;
+		background: url(../images/banner_small.jpg) no-repeat right 0px;
+	}
+	@include bp-medium {
+		height: 200px;
+		background: url(../images/banner_medium.jpg) no-repeat 90% 0px;
+	}
+	@include bp-large {
+		height: 275px; background: url(../images/banner_large.jpg) no-repeat right 0px; 
+	}
+	
+	a.logo{
+		display: block; 
+		position: absolute; 
+		background-position: 0px 0px; 
+		background-repeat: no-repeat; 
+			
+		@include bp-small {
+			width: $header_logo_full_width * 70 / 100; // 70%
+			height: $header_logo_full_height * 47 / 100; // 47%
+			top: 16px; 
+			right: 15px;
+			background-image: url(../images/logo_small.png);
+		}
+		@include bp-medium {
+			width: $header_logo_full_width * 76 / 100; // 76%
+			height: $header_logo_full_height * 82 / 100; // 82%
+			top: 20px; 
+			right: 20px;
+			background-image: url(../images/logo_medium.png);
+		}
+		@include bp-large {
+			width: $header_logo_full_width; 
+			height: $header_logo_full_height; 
+			top: 28px; 
+			right: 30px; 
+			background-image: url(../images/logo_large.png);
+		}
+	}
+}

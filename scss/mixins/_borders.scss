@@ -1,0 +1,13 @@
+@mixin borders($width, $type, $color, $radius) {
+  border: $width $type $color;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+/*
+usage:
+.sidebar {
+  @include borders(1px, solid, #333333, 10px);
+}
+*/
